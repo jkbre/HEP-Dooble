@@ -1,0 +1,122 @@
+% Symbol Guide for Doodles Cards (v1)
+% Auto-generated first draft. Edit for accuracy/refinement.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1.9cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{qrcode}
+\usepackage{xcolor}
+\usepackage{xparse}
+\setlist[itemize]{leftmargin=*,nosep,topsep=2pt,partopsep=0pt}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=teal}
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+
+% \newcommand{\symbolcard}[4]{%
+%   \includegraphics[width=5cm]{#1}%
+  
+%   \begin{wrapfigure}{r}{0.2\textwidth}%
+%     \qrcode{#2}%
+%   \end{wrapfigure}%
+%   {\Large \textbf{#3}} - #4%
+  
+%   \vspace{3\baselineskip}%
+% }
+
+% Custom command for creating symbol cards with images, descriptions, and QR codes
+% Usage: \symbolcard{image_path}{url}{title}{description}
+% Parameters:
+%   #1: Path to the image file (relative to document)
+%   #2: URL for the QR code (typically a reference link)
+%   #3: Title/name of the symbol or concept
+%   #4: Detailed description or explanation text
+% Layout: Two-column design with image on left (30% width) and content on right (65% width)
+% Features: Horizontal rule separator, responsive image scaling, bottom-aligned QR code
+\newcommand{\symbolcard}[4]{%
+  \noindent\hrule\vspace{18pt}                                % Top horizontal line separator + spacing
+  % Image column is narrower (0.3), text column is wider (0.65)
+  \begin{minipage}[c]{0.3\textwidth}                           % Left column: 30% width for image
+    \includegraphics[width=\linewidth, keepaspectratio]{#1}    % The main image/symbol/logo
+  \end{minipage}\hfill                                         % Gap between columns
+  \begin{minipage}[c]{0.65\textwidth}                          % Right column: 65% width for text content
+    {\Large\bfseries #3}\par\medskip                           % Large bold title at top of right column
+    #4                                                         % Main description text body
+    \par\vfill                                                 % Pushes QR code to bottom of right column
+    \vspace{12pt}                                              % Horizontal gap between description and QR code
+    \raggedleft                                                % Right-align the QR code
+    \qrcode[height=2cm]{#2}                                    % Small QR code at bottom-right
+  \end{minipage}
+  \vspace{18pt}                                               % Bottom spacing before next card
+}
+
+\begin{document}
+\begin{center}\Large\bfseries Particle / HEP Symbol \& Logo Guide (Draft)\end{center}
+% \vspace{0.5em}\hrule\vspace{1em}
+
+% NOTE: Verify physics accuracy; refine wording for final release.
+
+\symbolcard{HEP/ALICE_dEdx.png}{https://alice-collaboration.web.cern.ch/}{ALICE $dE/dx$}{Specific energy loss measurement (Bethe--Bloch like curve) used for particle identification in the ALICE TPC at the LHC.}
+\symbolcard{HEP/AMBER_logo.png}{https://home.cern/science/experiments/amber}{AMBER Logo}{Logo of the AMBER fixed-target experiment at CERN (successor to COMPASS) studying hadron structure and QCD dynamics.}
+\symbolcard{HEP/anihilation_diagram.png}{https://en.wikipedia.org/wiki/Electron-positron_annihilation}{Annihilation Diagram}{Tree-level electron-positron annihilation into a muon pair via virtual photon (or Z at higher energies). $e^+ e^- \to \gamma^*/Z^0 \to \mu^+ \mu^-$}
+\symbolcard{HEP/baryon_decuplet.png}{https://en.wikipedia.org/wiki/Baryon_decuplet}{Baryon Decuplet}{Spin-$3/2$ ground-state baryon SU(3) flavor decuplet ($\Delta$, $\Sigma^*$, $\Xi^*$, $\Omega$).}
+\symbolcard{HEP/baryon_octet.png}{https://en.wikipedia.org/wiki/Baryon}{Baryon Octet}{Spin-$1/2$ ground-state baryon SU(3) flavor octet (N, $\Lambda$, $\Sigma$, $\Xi$).}
+\symbolcard{HEP/beta_decay_diagram.png}{https://en.wikipedia.org/wiki/Beta_decay}{Beta Decay Diagram}{Weak interaction $d \to u$ transition emitting $W^-$ leading to $e^-$ and $\bar{\nu}_e$ (neutron beta decay). $n \to p + e^- + \bar\nu_e$}
+\symbolcard{HEP/box_diagram.png}{https://en.wikipedia.org/wiki/Neutral_particle_oscillation}{Box Diagram}{Loop-level box diagram contributing to neutral meson mixing (e.g. $B^0$-$\bar{B}^0$). $M_{12} \propto \sum_{i,j} V_{ib}V_{id}^* V_{jb}V_{jd}^* S(x_i,x_j)$}
+\symbolcard{HEP/bremsstrahlung.png}{https://en.wikipedia.org/wiki/Bremsstrahlung}{Bremsstrahlung}{Radiative emission from charged particle accelerated in Coulomb field. $\frac{d\sigma}{dk} \propto Z^2 \frac{1}{k}\left(1 + (1 - \frac{k}{E})^2\right)$}
+\symbolcard{HEP/bubble_chamber_omega.png}{https://en.wikipedia.org/wiki/Omega_baryon}{$\Omega^-$ in Bubble Chamber}{Discovery image of $\Omega^-$ (sss) in bubble chamber confirming SU(3) decuplet.}
+\symbolcard{HEP/cern_logo.png}{https://home.cern/}{CERN Logo}{Logo of CERN, the European Organization for Nuclear Research.}
+\symbolcard{HEP/cherenkov.png}{https://en.wikipedia.org/wiki/Cherenkov_radiation}{Cherenkov Radiation}{Emission of coherent light when a charged particle exceeds phase velocity of light in a medium. $\cos\theta_C = \frac{1}{n\beta}$}
+\symbolcard{HEP/CKM.png}{https://en.wikipedia.org/wiki/Cabibbo-Kobayashi-Maskawa_matrix}{CKM Matrix}{Quark flavor mixing matrix in charged-current weak interactions. $V_{CKM} = \begin{pmatrix} V_{ud}&V_{us}&V_{ub}\\ V_{cd}&V_{cs}&V_{cb}\\ V_{td}&V_{ts}&V_{tb}\end{pmatrix}$}
+\symbolcard{HEP/clebsh_gordan.png}{https://en.wikipedia.org/wiki/Clebsch-Gordan_coefficients}{Clebsch-Gordan Coefficients}{Coupling coefficients for adding angular momenta in quantum mechanics. $|j_1 m_1; j_2 m_2\rangle = \sum_{JM} |JM\rangle \langle j_1 j_2 m_1 m_2 | JM \rangle$}
+\symbolcard{HEP/cms_logo.png}{https://cms.cern/}{CMS Logo}{Logo of the Compact Muon Solenoid detector at the LHC.}
+\symbolcard{HEP/compass_logo.png}{https://wwwcompass.cern.ch/}{COMPASS Logo}{Logo of the COMPASS fixed-target experiment at CERN SPS.}
+\symbolcard{HEP/cyclotron.png}{https://en.wikipedia.org/wiki/Cyclotron}{Cyclotron}{Early circular accelerator using magnetic field and alternating electric field. $f = \frac{qB}{2\pi m}$}
+\symbolcard{HEP/dalitz_plot.png}{https://en.wikipedia.org/wiki/Dalitz_plot}{Dalitz Plot}{Three-body decay event density plot in invariant mass-squared plane.}
+\symbolcard{HEP/desy_logo.png}{https://www.desy.de/}{DESY Logo}{Logo of DESY (Deutsches Elektronen-Synchrotron), German accelerator center.}
+\symbolcard{HEP/dirac_equation.png}{https://en.wikipedia.org/wiki/Dirac_equation}{Dirac Equation}{Relativistic wave equation for spin-$1/2$ fermions predicting antimatter. $(i\hbar\gamma^\mu \partial_\mu - mc)\psi = 0$}
+\symbolcard{HEP/dis_diagram.png}{https://en.wikipedia.org/wiki/Deep_inelastic_scattering}{DIS Diagram}{Deep inelastic scattering of lepton on nucleon probing partons. $\frac{d^2\sigma}{dxdQ^2} \propto \frac{1}{xQ^4}\left[ (1-y+\tfrac{y^2}{2})F_2(x,Q^2) - \tfrac{y^2}{2}F_L(x,Q^2) \right]$}
+\symbolcard{HEP/drell-yan_diagram.png}{https://en.wikipedia.org/wiki/Drell-Yan_process}{Drell-Yan Diagram}{Quark-antiquark annihilation producing lepton pair. $q \bar q \to \gamma^*/Z^0 \to \ell^+\ell^-$}
+\symbolcard{HEP/dune_logo.png}{https://www.dunescience.org/}{DUNE Logo}{Logo of the Deep Underground Neutrino Experiment.}
+\symbolcard{HEP/em_cascade.png}{https://en.wikipedia.org/wiki/Electromagnetic_cascade}{EM Cascade}{Electromagnetic shower from repeated pair production and bremsstrahlung. $X_{max} \approx X_0 \ln\frac{E_0}{E_c}$}
+\symbolcard{HEP/fermi_golden_rule.png}{https://en.wikipedia.org/wiki/Fermi\%27s_golden_rule}{Fermi Golden Rule}{Transition rate from perturbation in quantum mechanics. $\Gamma_{i\to f} = \frac{2\pi}{\hbar}|M_{fi}|^2 \rho(E_f)$}
+\symbolcard{HEP/fuw_logo.png}{https://www.fuw.edu.pl/}{FUW Logo}{Logo of Faculty of Physics, University of Warsaw.}
+\symbolcard{HEP/gem.png}{https://en.wikipedia.org/wiki/Gas_electron_multiplier}{GEM Detector}{Gas Electron Multiplier micro-pattern gaseous detector.}
+\symbolcard{HEP/ggH_diagram.png}{https://en.wikipedia.org/wiki/Higgs_boson}{$gg\to H$ Diagram}{Gluon fusion loop (top quark) producing a Higgs boson. $\sigma(gg\to H) \propto |\sum_q y_q F_{1/2}(\tau_q)|^2$}
+\symbolcard{HEP/grand_logo.png}{https://grand.cnrs.fr/}{GRAND Logo}{Logo of the Giant Radio Array for Neutrino Detection.}
+\symbolcard{HEP/higgs-potential.png}{https://en.wikipedia.org/wiki/Higgs_mechanism}{Higgs Potential}{Mexican-hat potential leading to electroweak symmetry breaking. $V(\phi) = -\mu^2\phi^\dagger\phi + \lambda (\phi^\dagger\phi)^2$}
+\symbolcard{HEP/hypernucleus.png}{https://en.wikipedia.org/wiki/Hypernucleus}{Hypernucleus}{Nucleus containing one or more hyperons (e.g., $\Lambda$).}
+\symbolcard{HEP/hypothesis_test.png}{https://en.wikipedia.org/wiki/Statistical_hypothesis_testing}{Hypothesis Test}{Statistical decision framework (e.g., discovery threshold $5\sigma$). $Z = \sqrt{2\ln \frac{L(\hat{\theta})}{L(\theta_0)}}$}
+\symbolcard{HEP/kamiokande_logo.png}{https://en.wikipedia.org/wiki/Super-Kamiokande}{Kamiokande Logo}{Logo representing Kamiokande / Super-Kamiokande neutrino detector.}
+\symbolcard{HEP/kaon_mixing.png}{https://en.wikipedia.org/wiki/Neutral_kaon}{Kaon Mixing}{Neutral kaon oscillation via weak interactions. $|K_{L,S}\rangle = p|K^0\rangle \pm q|\bar K^0\rangle$}
+\symbolcard{HEP/lagrangian.png}{https://en.wikipedia.org/wiki/Lagrangian_(field_theory)}{Lagrangian Density}{Generic field theory Lagrangian symbol. $\mathcal{L} = T - V$}
+\symbolcard{HEP/lorentz_tr_matrix.png}{https://en.wikipedia.org/wiki/Lorentz_transformation}{Lorentz Transformation Matrix}{Matrix representing boost/rotation in Minkowski spacetime. $x'^\mu = \Lambda^\mu_{\ \nu} x^\nu$}
+\symbolcard{HEP/luxe_logo.png}{https://www.luxe-experiment.com/}{LUXE Logo}{Logo of the LUXE (Laser Und XFEL Experiment) probing strong-field QED.}
+\symbolcard{HEP/m4l_Higgs.png}{https://en.wikipedia.org/wiki/Higgs_boson}{$H\to 4\ell$ (m4l)}{Invariant mass distribution for Higgs to four-lepton decay. $pp \to H \to ZZ^{(*)} \to 4\ell$}
+\symbolcard{HEP/nu_oscillations.png}{https://en.wikipedia.org/wiki/Neutrino_oscillation}{Neutrino Oscillations}{Flavor change due to mixing and mass differences. $P_{\alpha\to\beta} \approx \sin^2(2\theta) \sin^2\left(\frac{\Delta m^2 L}{4E}\right)$}
+\symbolcard{HEP/pair_production.png}{https://en.wikipedia.org/wiki/Pair_production}{Pair Production}{Photon conversion into $e^+ e^-$ in Coulomb field. $E_\gamma > 2 m_e c^2$}
+\symbolcard{HEP/penguin_diagram.png}{https://en.wikipedia.org/wiki/Penguin_diagram}{Penguin Diagram}{Loop diagram inducing flavor-changing neutral currents. $b \to s \gamma$, $b \to s \ell^+\ell^-$}
+\symbolcard{HEP/photomultiplier.png}{https://en.wikipedia.org/wiki/Photomultiplier}{Photomultiplier Tube}{Vacuum tube amplifying photoelectrons via dynode chain.}
+\symbolcard{HEP/PMNS.png}{https://en.wikipedia.org/wiki/Pontecorvo-Maki-Nakagawa-Sakata_matrix}{PMNS Matrix}{Neutrino flavor mixing matrix (Pontecorvo-Maki-Nakagawa-Sakata). $U_{PMNS} = U_{23} U_{13} U_{12} \mathrm{diag}(1,e^{i\alpha_1/2},e^{i\alpha_2/2})$}
+\symbolcard{HEP/pretzelosity_TMDs.png}{https://en.wikipedia.org/wiki/Parton_distribution_function}{Pretzelosity TMD}{Transverse momentum dependent distribution related to nucleon spin-orbit correlations.}
+\symbolcard{HEP/quadrupole.png}{https://en.wikipedia.org/wiki/Quadrupole_magnet}{Quadrupole Magnet}{Magnet focusing charged particle beams with linear field gradient. $B_x = G y, B_y = G x$}
+\symbolcard{HEP/quantum_spin.png}{https://en.wikipedia.org/wiki/Spin_(physics)}{Quantum Spin}{Intrinsic angular momentum of quantum particles. $\hat{S}^2 |s m\rangle = \hbar^2 s(s+1)|s m\rangle$}
+\symbolcard{HEP/schwinger_diagram.png}{https://en.wikipedia.org/wiki/Schwinger_effect}{Schwinger Diagram}{Vacuum pair production in strong electric field (Schwinger effect). $\Gamma/V \sim (eE)^2 \exp\left(-\frac{\pi m^2 c^3}{eE\hbar}\right)$}
+\symbolcard{HEP/scintillator.png}{https://en.wikipedia.org/wiki/Scintillator}{Scintillator}{Material emitting photons when traversed by ionizing radiation.}
+\symbolcard{HEP/shine_logo.png}{https://shine.web.cern.ch/}{SHINE Logo}{Logo of NA61/SHINE experiment at CERN SPS.}
+\symbolcard{HEP/silicon_detector.png}{https://en.wikipedia.org/wiki/Silicon_detector_(particle_physics)}{Silicon Detector}{Semiconductor tracking detector using depleted silicon.}
+\symbolcard{HEP/sk_event.png}{https://en.wikipedia.org/wiki/Super-Kamiokande}{Super-K Event}{Cherenkov light pattern from neutrino interaction in Super-Kamiokande.}
+\symbolcard{HEP/unitarity_triangle.png}{https://en.wikipedia.org/wiki/Unitarity_triangle}{Unitarity Triangle}{Graphical representation of CKM unitarity relation. $V_{ud}V_{ub}^* + V_{cd}V_{cb}^* + V_{td}V_{tb}^* = 0$}
+\symbolcard{HEP/valence_q_pdf.png}{https://en.wikipedia.org/wiki/Parton_distribution_function}{Valence Quark PDFs}{Momentum distributions of valence quarks inside nucleon. $\int_0^1 u_v(x) dx = 2, \int_0^1 d_v(x) dx = 1$}
+\symbolcard{HEP/warsawtpc_logo.png}{https://en.wikipedia.org/wiki/Time_projection_chamber}{Warsaw TPC Logo}{Logo of Warsaw TPC project / group involvement.}
+\symbolcard{HEP/WMAP_2012.png}{https://en.wikipedia.org/wiki/WMAP}{WMAP 2012}{CMB anisotropy map from WMAP mission (2012 release).}
+\symbolcard{HEP/Wu_experiment.png}{https://en.wikipedia.org/wiki/Wu_experiment}{Wu Experiment}{Parity violation in $\beta$ decay observed in 1957 cobalt-60 experiment. $A = \frac{N_\uparrow - N_\downarrow}{N_\uparrow + N_\downarrow} \neq 0$}
+\symbolcard{HEP/xfel_cavity.png}{https://en.wikipedia.org/wiki/Free-electron_laser}{XFEL Cavity}{Superconducting RF accelerating cavity for X-ray free-electron laser.}
+\symbolcard{HEP/z_peak.png}{https://en.wikipedia.org/wiki/Z_boson}{Z Peak}{Resonant enhancement in $e^+e^- \to \text{hadrons}$ near $Z^0$ mass. $\sigma(s) \approx \frac{12\pi \Gamma_e \Gamma_f}{M_Z^2}\frac{1}{(s - M_Z^2)^2 + M_Z^2 \Gamma_Z^2}$}
+
+\vfill\centerline{\small Draft generated on \today\ -- Review for accuracy before publication.}
+\end{document}

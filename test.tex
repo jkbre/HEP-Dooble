@@ -1,0 +1,172 @@
+% LaTeX Test Document for Symbol Card Layouts
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1.9cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{qrcode}
+\usepackage{xcolor}
+\usepackage{tabularx} % Required for Idea 1
+\usepackage{letltxmacro} % Required for Idea 4
+
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=teal}
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+
+% --- IDEA 1: Three-Column Layout ---
+\newcommand{\symbolcardA}[4]{%
+  \noindent\hrule\vspace{1em}
+  \begin{tabularx}{\textwidth}{@{} m{4.5cm} X m{2.5cm} @{}}
+    % Column 1: Image
+    \includegraphics[width=\linewidth]{#1} &
+    % Column 2: Title & Description
+    {\Large\bfseries #3}\par\medskip#4 &
+    % Column 3: QR Code
+    \centering\qrcode[height=2.5cm]{#2}
+  \end{tabularx}
+  \vspace{1em}
+}
+
+% --- IDEA 2: Image-Centric with Text Below ---
+\newcommand{\symbolcardB}[4]{%
+  \noindent\hrule\vspace{1em}
+  \begin{center}
+    \includegraphics[width=6cm]{#1}
+  \end{center}
+  \vspace{0.5em}
+  \begin{minipage}[t]{0.7\textwidth}
+    \raggedright
+    {\Large\bfseries #3}\par
+    #4
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.25\textwidth}
+    \raggedleft
+    \qrcode{#2}
+  \end{minipage}
+  \vspace{1em}
+}
+
+% --- IDEA 3: Refined Two-Column Layout ---
+\newcommand{\symbolcardC}[4]{%
+  \noindent\hrule\vspace{1em}
+  \begin{minipage}[c]{0.3\textwidth}
+    \includegraphics[width=\linewidth]{#1}
+  \end{minipage}\hfill
+  \begin{minipage}[c]{0.65\textwidth}
+    {\Large\bfseries #3}\par
+    #4
+    \par\vspace{1em}\raggedleft
+    \qrcode[height=2cm]{#2}
+  \end{minipage}
+  \vspace{1em}
+}
+
+% --- IDEA 4: "Museum Plaque" ---
+\newcommand{\symbolcardD}[4]{%
+  \noindent\hrule\vspace{1em}
+  \begin{minipage}{\textwidth}
+    \centering
+    \includegraphics[width=7cm]{#1}
+  \end{minipage}
+  \vspace{1em}
+  
+  \begin{minipage}[t]{0.8\textwidth}
+    \raggedright
+    {\Large\bfseries #3}\par\medskip
+    #4
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.18\textwidth}
+    \raggedleft
+    \qrcode[height=1.5cm]{#2}
+  \end{minipage}
+  \vspace{1.5em}
+}
+
+% --- IDEA 5: "Asymmetric Balance" ---
+\newcommand{\symbolcardE}[4]{%
+  \noindent\hrule\vspace{1.5em}
+  \begin{minipage}[t]{0.4\textwidth}
+    \includegraphics[width=\linewidth, keepaspectratio]{#1}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.55\textwidth}
+    {\Large\bfseries #3}\par\medskip
+    #4
+    \par\vfill % Pushes QR code to the bottom
+    \raggedleft
+    \qrcode[height=2cm]{#2}
+  \end{minipage}
+  \vspace{1.5em}
+}
+
+% --- IDEA 5.1: "Centered Asymmetric Balance" ---
+\newcommand{\symbolcardF}[4]{%
+  \noindent\hrule\vspace{1.5em}
+  % We use [c] to vertically center the image and text blocks relative to each other.
+  \begin{minipage}[c]{0.4\textwidth}
+    \includegraphics[width=\linewidth, keepaspectratio]{#1}
+  \end{minipage}\hfill
+  \begin{minipage}[c]{0.55\textwidth}
+    {\Large\bfseries #3}\par\medskip
+    #4
+    \par\vfill % Pushes QR code to the bottom of this block
+    \raggedleft
+    \qrcode[height=2cm]{#2}
+  \end{minipage}
+  \vspace{1.5em}
+}
+
+% --- IDEA 5.2: "Text-Favored Asymmetric Balance" ---
+\newcommand{\symbolcardG}[4]{%
+  \noindent\hrule\vspace{1.5em}
+  % Image column is narrower (0.3), text column is wider (0.65)
+  \begin{minipage}[c]{0.3\textwidth}
+    \includegraphics[width=\linewidth, keepaspectratio]{#1}
+  \end{minipage}\hfill
+  \begin{minipage}[c]{0.65\textwidth}
+    {\Large\bfseries #3}\par\medskip
+    #4
+    \par\vfill % Pushes QR code to the bottom of this block
+    \raggedleft
+    \qrcode[height=2cm]{#2}
+  \end{minipage}
+  \vspace{1.5em}
+}
+
+\begin{document}
+
+% \section*{Layout Idea 1: Three-Column}
+% \symbolcardA{HEP/ALICE_dEdx.png}{https://alice-collaboration.web.cern.ch/}{ALICE $dE/dx$}{Specific energy loss measurement (Bethe--Bloch like curve) used for particle identification in the ALICE TPC at the LHC.}
+
+% \section*{Layout Idea 2: Image-Centric}
+% \symbolcardB{HEP/ALICE_dEdx.png}{https://alice-collaboration.web.cern.ch/}{ALICE $dE/dx$}{Specific energy loss measurement (Bethe--Bloch like curve) used for particle identification in the ALICE TPC at the LHC.}
+
+% \section*{Layout Idea 3: Refined Two-Column}
+% \symbolcardC{HEP/ALICE_dEdx.png}{https://alice-collaboration.web.cern.ch/}{ALICE $dE/dx$}{Specific energy loss measurement (Bethe--Bloch like curve) used for particle identification in the ALICE TPC at the LHC.}
+
+% \section*{Layout Idea 4: The "Museum Plaque"}
+% \symbolcardD{HEP/ALICE_dEdx.png}{https://alice-collaboration.web.cern.ch/}{ALICE $dE/dx$}{Specific energy loss measurement (Bethe--Bloch like curve) used for particle identification in the ALICE TPC at the LHC.}
+
+\section*{Layout Idea 5: The "Asymmetric Balance"}
+\symbolcardE{HEP/ALICE_dEdx.png}{https://alice-collaboration.web.cern.ch/}{ALICE $dE/dx$}{Specific energy loss measurement (Bethe--Bloch like curve) used for particle identification in the ALICE TPC at the LHC.}
+
+\section*{Layout Idea 5.1: Centered Asymmetric Balance}
+\symbolcardF{HEP/ALICE_dEdx.png}{https://alice-collaboration.web.cern.ch/}{ALICE $dE/dx$}{Specific energy loss measurement (Bethe--Bloch like curve) used for particle identification in the ALICE TPC at the LHC.}
+
+\symbolcardF{HEP/dirac_equation.png}{https://en.wikipedia.org/wiki/Dirac_equation}{Dirac Equation}{Relativistic wave equation for spin-$1/2$ fermions predicting antimatter. $(i\hbar\gamma^\mu \partial_\mu - mc)\psi = 0$}
+
+\symbolcardF{HEP/AMBER_logo.png}{https://home.cern/science/experiments/amber}{AMBER Logo}{Logo of the AMBER fixed-target experiment at CERN (successor to COMPASS) studying hadron structure and QCD dynamics.}
+
+\section*{Layout Idea 5.2: Text-Favored Asymmetric Balance}
+\symbolcardG{HEP/ALICE_dEdx.png}{https://alice-collaboration.web.cern.ch/}{ALICE $dE/dx$}{Specific energy loss measurement (Bethe--Bloch like curve) used for particle identification in the ALICE TPC at the LHC.}
+
+\symbolcardG{HEP/dirac_equation.png}{https://en.wikipedia.org/wiki/Dirac_equation}{Dirac Equation}{Relativistic wave equation for spin-$1/2$ fermions predicting antimatter. $(i\hbar\gamma^\mu \partial_\mu - mc)\psi = 0$}
+
+\symbolcardG{HEP/AMBER_logo.png}{https://home.cern/science/experiments/amber}{AMBER Logo}{Logo of the AMBER fixed-target experiment at CERN (successor to COMPASS) studying hadron structure and QCD dynamics.}
+
+\noindent\hrule
+
+\end{document}

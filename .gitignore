@@ -1,0 +1,47 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/out
+/tmp
+/build
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# misc
+.DS_Store
+*.swp
+*.swo
+.tern-project
+.eslintcache
+
+# firebase
+.firebase/
+functions/lib
+functions/node_modules
+
+# Netlify Functions
+netlify/functions/*
+!netlify/functions/.git
+
+#parcel
+.parcel-cache
+
+#Latex
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+
+/batches
+/HEP
+*.pdf

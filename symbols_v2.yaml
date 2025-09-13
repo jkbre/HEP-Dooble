@@ -1,0 +1,267 @@
+- image: HEP/ALICE_dEdx.png
+  url: https://alice-public.web.cern.ch/tpc
+  title: ALICE $dE/dx$
+  description: Specific energy loss measurement (Bethe--Bloch like curve) used for
+    particle identification in the ALICE TPC at the LHC.
+- image: HEP/AMBER_logo.png
+  url: https://amber.web.cern.ch/
+  title: AMBER Logo
+  description: Logo of the AMBER fixed-target experiment at CERN (successor to COMPASS)
+    studying hadron structure and QCD dynamics.
+- image: HEP/anihilation_diagram.png
+  url: https://en.wikipedia.org/wiki/Electron%E2%80%93positron_annihilation
+  title: Annihilation Diagram
+  description: 'Tree-level electron-positron annihilation into a muon pair via virtual
+    photon (or Z at higher energies). $e^+ e^- \to \gamma^*/Z^0 \to \mu^+ \mu^-$'
+- image: HEP/baryon_decuplet.png
+  url: https://en.wikipedia.org/wiki/Baryon#Decuplet
+  title: Baryon Decuplet
+  description: Spin-$3/2$ ground-state baryon SU(3) flavor decuplet ($\Delta$, $\Sigma^*$,
+    $\Xi^*$, $\Omega$).
+- image: HEP/baryon_octet.png
+  url: https://en.wikipedia.org/wiki/Baryon#Octet
+  title: Baryon Octet
+  description: Spin-$1/2$ ground-state baryon SU(3) flavor octet (N, $\Lambda$, $\Sigma$,
+    $\Xi$).
+- image: HEP/beta_decay_diagram.png
+  url: https://en.wikipedia.org/wiki/Beta_decay
+  title: Beta Decay Diagram
+  description: Weak interaction $d \to u$ transition emitting $W^-$ leading to $e^-$
+    and $\bar{\nu}_e$ (neutron beta decay). $n \to p + e^- + \bar\nu_e$
+- image: HEP/box_diagram.png
+  url: https://en.wikipedia.org/wiki/Neutral_particle_oscillation
+  title: Box Diagram
+  description: Loop-level box diagram contributing to neutral meson mixing (e.g. $B^0$-$\bar{B}^0$).
+    $M_{12} \propto \sum_{i,j} V_{ib}V_{id}^* V_{jb}V_{jd}^* S(x_i,x_j)$
+- image: HEP/bremsstrahlung.png
+  url: https://en.wikipedia.org/wiki/Bremsstrahlung
+  title: Bremsstrahlung
+  description: Radiative emission from charged particle accelerated in Coulomb field.
+    $\frac{d\sigma}{dk} \propto Z^2 \frac{1}{k}\left(1 + (1 - \frac{k}{E})^2\right)$
+- image: HEP/bubble_chamber_omega.png
+  url: https://en.wikipedia.org/wiki/Omega_baryon#Discovery
+  title: Bubble Chamber $\Omega^-$
+  description: Discovery image of $\Omega^-$ (sss) in bubble chamber confirming SU(3)
+    decuplet.
+- image: HEP/cern_logo.png
+  url: https://home.cern/
+  title: CERN Logo
+  description: Logo of CERN, the European Organization for Nuclear Research.
+- image: HEP/cherenkov.png
+  url: https://en.wikipedia.org/wiki/Cherenkov_radiation
+  title: Cherenkov Radiation
+  description: Emission of coherent light when a charged particle exceeds phase velocity
+    of light in a medium. $\cos\theta_C = \frac{1}{n\beta}$
+- image: HEP/CKM.png
+  url: https://en.wikipedia.org/wiki/Cabibbo%E2%80%93Kobayashi%E2%80%93Maskawa_matrix
+  title: CKM Matrix
+  description: 'Quark flavor mixing matrix in charged-current weak interactions. $V_{CKM}
+    = \begin{pmatrix} V_{ud}&V_{us}&V_{ub}\\ V_{cd}&V_{cs}&V_{cb}\\ V_{td}&V_{ts}&V_{tb}\end{pmatrix}$'
+- image: HEP/clebsh_gordan.png
+  url: https://en.wikipedia.org/wiki/Clebsch%E2%80%93Gordan_coefficients
+  title: Clebsch-Gordan Coefficients
+  description: Coupling coefficients for adding angular momenta in quantum mechanics.
+    $|j_1 m_1; j_2 m_2\rangle = \sum_{JM} |JM\rangle \langle j_1 j_2 m_1 m_2 | JM \rangle$
+- image: HEP/cms_logo.png
+  url: https://cms.cern/
+  title: CMS Logo
+  description: Logo of the Compact Muon Solenoid detector at the LHC.
+- image: HEP/compass_logo.png
+  url: https://compass.web.cern.ch/
+  title: COMPASS Logo
+  description: Logo of the COMPASS fixed-target experiment at CERN SPS.
+- image: HEP/cyclotron.png
+  url: https://en.wikipedia.org/wiki/Cyclotron
+  title: Cyclotron
+  description: Early circular accelerator using magnetic field and alternating electric
+    field. $f = \frac{qB}{2\pi m}$
+- image: HEP/dalitz_plot.png
+  url: https://en.wikipedia.org/wiki/Dalitz_plot
+  title: Dalitz Plot
+  description: Three-body decay event density plot in invariant mass-squared plane.
+- image: HEP/desy_logo.png
+  url: https://www.desy.de/
+  title: DESY Logo
+  description: Logo of DESY (Deutsches Elektronen-Synchrotron), German accelerator
+    center.
+- image: HEP/dirac_equation.png
+  url: https://en.wikipedia.org/wiki/Dirac_equation
+  title: Dirac Equation
+  description: Relativistic wave equation for spin-$1/2$ fermions predicting antimatter.
+    $(i\gamma^\mu \partial_\mu - m)\psi = 0$
+- image: HEP/dis_diagram.png
+  url: https://en.wikipedia.org/wiki/Deep_inelastic_scattering
+  title: DIS Diagram
+  description: Deep inelastic scattering of lepton on nucleon probing partons. $\frac{d^2\sigma}{dxdQ^2}
+    \propto \frac{1}{xQ^4}\left[ (1-y+\tfrac{y^2}{2})F_2(x,Q^2) - \tfrac{y^2}{2}F_L(x,Q^2)
+    \right]$
+- image: HEP/drell-yan_diagram.png
+  url: https://en.wikipedia.org/wiki/Drell%E2%80%93Yan_process
+  title: Drell-Yan Diagram
+  description: Quark-antiquark annihilation producing lepton pair. $q \bar q \to \gamma^*/Z^0
+    \to \ell^+\ell^-$
+- image: HEP/dune_logo.png
+  url: https://www.dunescience.org/
+  title: DUNE Logo
+  description: Logo of the Deep Underground Neutrino Experiment.
+- image: HEP/em_cascade.png
+  url: https://en.wikipedia.org/wiki/Particle_shower#Electromagnetic_showers
+  title: EM Cascade
+  description: Electromagnetic shower from repeated pair production and bremsstrahlung.
+    $X_{max} \approx X_0 \ln\frac{E_0}{E_c}$
+- image: HEP/fermi_golden_rule.png
+  url: https://en.wikipedia.org/wiki/Fermi%27s_golden_rule
+  title: Fermi Golden Rule
+  description: Transition rate from perturbation in quantum mechanics. $\Gamma_{i\to
+    f} = \frac{2\pi}{\hbar}|M_{fi}|^2 \rho(E_f)$
+- image: HEP/fuw_logo.png
+  url: https://www.fuw.edu.pl/en
+  title: FUW Logo
+  description: Logo of Faculty of Physics, University of Warsaw.
+- image: HEP/gem.png
+  url: https://en.wikipedia.org/wiki/Gas_electron_multiplier
+  title: GEM Detector
+  description: Gas Electron Multiplier micro-pattern gaseous detector.
+- image: HEP/ggH_diagram.png
+  url: https://en.wikipedia.org/wiki/Higgs_boson#Production
+  title: ggH Diagram
+  description: Gluon fusion loop (top quark) producing a Higgs boson. $\sigma(gg\to
+    H) \propto |\sum_q y_q F_{1/2}(\tau_q)|^2$
+- image: HEP/grand_logo.png
+  url: https://grand.cnrs.fr/
+  title: GRAND Logo
+  description: Logo of the Giant Radio Array for Neutrino Detection.
+- image: HEP/higgs-potential.png
+  url: https://en.wikipedia.org/wiki/Higgs_mechanism
+  title: Higgs Potential
+  description: Mexican-hat potential leading to electroweak symmetry breaking. $V(\phi)
+    = -\mu^2\phi^\dagger\phi + \lambda (\phi^\dagger\phi)^2$
+- image: HEP/hypernucleus.png
+  url: https://en.wikipedia.org/wiki/Hypernucleus
+  title: Hypernucleus
+  description: Nucleus containing one or more hyperons (e.g., $\Lambda$).
+- image: HEP/hypothesis_test.png
+  url: https://en.wikipedia.org/wiki/Statistical_significance#In_particle_physics
+  title: Hypothesis Test
+  description: Statistical decision framework (e.g., discovery threshold $5\sigma$).
+    $Z = \sqrt{2((S+B)\ln(1+S/B)-S)}$
+- image: HEP/kamiokande_logo.png
+  url: https://www-sk.icrr.u-tokyo.ac.jp/en/
+  title: Kamiokande Logo
+  description: Logo representing Kamiokande / Super-Kamiokande neutrino detector.
+- image: HEP/kaon_mixing.png
+  url: https://en.wikipedia.org/wiki/Neutral_kaon_mixing
+  title: Kaon Mixing
+  description: Neutral kaon oscillation via weak interactions. $|K_{L,S}\rangle =
+    p|K^0\rangle \pm q|\bar K^0\rangle$
+- image: HEP/lagrangian.png
+  url: https://en.wikipedia.org/wiki/Lagrangian_(field_theory)
+  title: Lagrangian Density
+  description: Generic field theory Lagrangian symbol. $\mathcal{L} = T - V$
+- image: HEP/lorentz_tr_matrix.png
+  url: https://en.wikipedia.org/wiki/Lorentz_transformation
+  title: Lorentz Transformation Matrix
+  description: Matrix representing boost/rotation in Minkowski spacetime. $x'^\mu =
+    \Lambda^\mu_{\ \nu} x^\nu$
+- image: HEP/luxe_logo.png
+  url: https://www.luxe-experiment.eu/
+  title: LUXE Logo
+  description: Logo of the LUXE (Laser Und XFEL Experiment) probing strong-field QED.
+- image: HEP/m4l_Higgs.png
+  url: https://en.wikipedia.org/wiki/Discovery_of_the_Higgs_boson#ATLAS_and_CMS_experiments_at_CERN
+  title: H->4l (m4l)
+  description: Invariant mass distribution for Higgs to four-lepton decay, the "golden
+    channel" for its discovery. $pp \to H \to ZZ^{(*)} \to 4\ell$
+- image: HEP/nu_oscillations.png
+  url: https://en.wikipedia.org/wiki/Neutrino_oscillation
+  title: Neutrino Oscillations
+  description: Flavor change due to mixing and mass differences. $P_{\alpha\to\beta}
+    \approx \sin^2(2\theta) \sin^2\left(\frac{\Delta m^2 L}{4E}\right)$
+- image: HEP/pair_production.png
+  url: https://en.wikipedia.org/wiki/Pair_production
+  title: Pair Production
+  description: Photon conversion into $e^+ e^-$ in Coulomb field. $E_\gamma > 2 m_e
+    c^2$
+- image: HEP/penguin_diagram.png
+  url: https://en.wikipedia.org/wiki/Penguin_diagram
+  title: Penguin Diagram
+  description: Loop diagram inducing flavor-changing neutral currents. $b \to s \gamma$,
+    $b \to s \ell^+\ell^-$
+- image: HEP/photomultiplier.png
+  url: https://en.wikipedia.org/wiki/Photomultiplier_tube
+  title: Photomultiplier Tube
+  description: Vacuum tube amplifying photoelectrons via dynode chain.
+- image: HEP/PMNS.png
+  url: https://en.wikipedia.org/wiki/Pontecorvo%E2%80%93Maki%E2%80%93Nakagawa%E2%80%93Sakata_matrix
+  title: PMNS Matrix
+  description: Neutrino flavor mixing matrix (Pontecorvo-Maki-Nakagawa-Sakata). $U_{PMNS}
+    = U_{23} U_{13} U_{12} \mathrm{diag}(1,e^{i\alpha_1/2},e^{i\alpha_2/2})$
+- image: HEP/pretzelosity_TMDs.png
+  url: https://arxiv.org/abs/0807.2524
+  title: Pretzelosity TMD
+  description: Transverse momentum dependent distribution related to nucleon spin-orbit
+    correlations. (See page 7 of linked review for definition)
+- image: HEP/quadrupole.png
+  url: https://en.wikipedia.org/wiki/Quadrupole_magnet
+  title: Quadrupole Magnet
+  description: Magnet focusing charged particle beams with linear field gradient. $B_x
+    = G y, B_y = G x$
+- image: HEP/quantum_spin.png
+  url: https://en.wikipedia.org/wiki/Spin_(physics)
+  title: Quantum Spin
+  description: Intrinsic angular momentum of quantum particles. $\hat{S}^2 |s m\rangle
+    = \hbar^2 s(s+1)|s m\rangle$
+- image: HEP/schwinger_diagram.png
+  url: https://en.wikipedia.org/wiki/Schwinger_effect
+  title: Schwinger Diagram
+  description: Vacuum pair production in strong electric field (Schwinger effect).
+    $\Gamma/V \sim (eE)^2 \exp\left(-\frac{\pi m^2 c^3}{eE\hbar}\right)$
+- image: HEP/scintillator.png
+  url: https://en.wikipedia.org/wiki/Scintillator
+  title: Scintillator
+  description: Material emitting photons when traversed by ionizing radiation.
+- image: HEP/shine_logo.png
+  url: https://shine.web.cern.ch/
+  title: SHINE Logo
+  description: Logo of NA61/SHINE experiment at CERN SPS.
+- image: HEP/silicon_detector.png
+  url: https://en.wikipedia.org/wiki/Semiconductor_detector
+  title: Silicon Detector
+  description: Semiconductor tracking detector using depleted silicon.
+- image: HEP/sk_event.png
+  url: https://en.wikipedia.org/wiki/Super-Kamiokande
+  title: Super-K Event
+  description: Cherenkov light pattern from neutrino interaction in Super-Kamiokande.
+- image: HEP/unitarity_triangle.png
+  url: https://en.wikipedia.org/wiki/Unitarity_triangle
+  title: Unitarity Triangle
+  description: Graphical representation of CKM unitarity relation. $V_{ud}V_{ub}^*
+    + V_{cd}V_{cb}^* + V_{td}V_{tb}^* = 0$
+- image: HEP/valence_q_pdf.png
+  url: https://en.wikipedia.org/wiki/Parton_distribution_function
+  title: Valence Quark PDFs
+  description: Momentum distributions of valence quarks inside nucleon. $\int_0^1 u_v(x)
+    dx = 2, \int_0^1 d_v(x) dx = 1$
+- image: HEP/warsawtpc_logo.png
+  url: http://warsawtpc.fuw.edu.pl/
+  title: Warsaw TPC Logo
+  description: Logo of Warsaw TPC project / group involvement.
+- image: HEP/WMAP_2012.png
+  url: https://en.wikipedia.org/wiki/Wilkinson_Microwave_Anisotropy_Probe
+  title: WMAP 2012
+  description: CMB anisotropy map from WMAP mission (2012 release).
+- image: HEP/Wu_experiment.png
+  url: https://en.wikipedia.org/wiki/Wu_experiment
+  title: Wu Experiment
+  description: Parity violation in $\beta$ decay observed in 1957 cobalt-60 experiment.
+    $A = \frac{N_\uparrow - N_\downarrow}{N_\uparrow + N_\downarrow} \neq 0$
+- image: HEP/xfel_cavity.png
+  url: https://en.wikipedia.org/wiki/Superconducting_radio-frequency_cavity
+  title: XFEL Cavity
+  description: Superconducting RF accelerating cavity for X-ray free-electron laser.
+- image: HEP/z_peak.png
+  url: https://en.wikipedia.org/wiki/Z_boson#Z_bosons_as_a_diagnostic_tool
+  title: Z Peak
+  description: Resonant enhancement in $e^+e^- \to \text{hadrons}$ near $Z^0$ mass.
+    $\sigma(s) \approx \frac{12\pi \Gamma_e \Gamma_f}{M_Z^2}\frac{1}{(s - M_Z^2)^2
+    + M_Z^2 \Gamma_Z^2}$

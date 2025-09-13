@@ -1,0 +1,46 @@
+Identify symbol on the cards. Prepare a Latex document describing
+each symbol. Description should contain a QR code with link to
+Wikipedia explanation.
+
+Use following pattern for each section: \section*
+{\includegraphics[width=5cm]{../images/HEP/dirac_equation.png}}
+
+\begin{wrapfigure}{r}{0.2\textwidth}
+\qrcode{https://en.wikipedia.org/wiki/Dirac_equation}
+\end{wrapfigure}
+{\Large {\bf Dirac Equation}} - a relativistic wave equation
+describing
+spin-$\tfrac{1}{2}$ particles such as electrons.
+
+\vspace{3\baselineskip}
+
+or 
+
+% Preamble bits (once in your doc):
+% \usepackage{graphicx,wrapfig,amsmath,hyperref}
+% \usepackage{qrcode}
+% \usepackage{enumitem}
+
+\section*{Dirac equation}
+
+\begin{minipage}[t]{0.72\textwidth}
+\noindent\textbf{A relativistic wave equation for spin-\(\tfrac{1}{2}\) particles
+such as the electron.}
+
+\medskip
+Formal: \( (i\hbar\,\gamma^\mu \partial_\mu - mc)\,\psi = 0 \)
+
+\medskip
+\begin{itemize}[leftmargin=*]
+  \item What: First‑order Lorentz‑covariant equation for fermions.
+  \item Why: Unifies spin and relativity; predicts antiparticles.
+  \item Conventions: metric \( (+,-,-,-) \); keep \(\hbar,c\) explicit here.
+\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.25\textwidth}
+\centering
+\includegraphics[width=\linewidth]{../images/HEP/dirac_equation.pdf}
+
+\medskip
+\qrcode[height=2.2cm]{https://en.wikipedia.org/wiki/Dirac_equation}
+\end{minipage}
