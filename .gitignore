@@ -41,6 +41,7 @@ netlify/functions/*
 *.log
 *.fls
 *.fdb_latexmk
+*.out
 
 /batches
 /HEP
