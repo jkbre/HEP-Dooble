@@ -44,3 +44,11 @@ This will:
 **PNG files:** The `symbols.yaml` and `symbols_v2.yaml` files reference images that are expected to be in the `HEP/` directory. This directory is not included in the repository. To acquire the necessary PNG files, please contact the creator of this repository or a contributor.
 
 **Technological Hygiene**: This repo was created by a human in collaboration with a machine.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Credits
+
+The `example_card.png` image was created by [akalinow](https://github.com/akalinow).
