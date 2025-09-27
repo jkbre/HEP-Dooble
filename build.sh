@@ -40,6 +40,12 @@ YAML_FILE="$1"
 EXPECTED_PNG_COUNT="${2:-57}"  # Default to 57 if not provided
 OUTPUT_NAME="${3:-symbol_guide_from_yaml}"  # Default output name
 
+# Check if pdflatex is installed
+if ! command -v pdflatex &> /dev/null; then
+    print_error "pdflatex could not be found. Please install a LaTeX distribution."
+    exit 1
+fi
+
 # Check if YAML file exists
 if [ ! -f "$YAML_FILE" ]; then
     print_error "YAML file '$YAML_FILE' not found!"

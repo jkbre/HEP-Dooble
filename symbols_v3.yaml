@@ -51,7 +51,7 @@
   image: HEP/cherenkov.png
   title: Cherenkov Radiation
   url: https://en.wikipedia.org/wiki/Cherenkov_radiation
-- description: 'Quark flavor mixing matrix in charged-current weak interactions.
+- description: Quark flavor mixing matrix in charged-current weak interactions.
   image: HEP/CKM.png
   title: CKM Matrix
   url: https://en.wikipedia.org/wiki/Cabibbo%E2%80%93Kobayashi%E2%80%93Maskawa_matrix
@@ -148,7 +148,7 @@
   image: HEP/lagrangian.png
   title: Lagrangian Density
   url: https://en.wikipedia.org/wiki/Lagrangian_(field_theory)
-- description: Matrix representing boost/rotation in Minkowski spacetime. Transforms $x'^\mu = \Lambda^\mu_{\ \nu} x^\nu$.
+- description: Matrix representing boost/rotation in Minkowski spacetime.
   image: HEP/lorentz_tr_matrix.png
   title: Lorentz Transformation Matrix
   url: https://en.wikipedia.org/wiki/Lorentz_transformation
